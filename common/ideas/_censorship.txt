@@ -1,0 +1,279 @@
+ideas = {
+
+censorship = {
+		law = yes
+		
+
+		censorship1 = {
+
+		picture = generic_democratic_drift_bonus	
+
+			
+
+			level = 3
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+	
+
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 5
+   			}
+
+		}
+
+		com_censorship2 = {
+			
+			picture = generic_pp_unity_bonus
+
+
+			available = {
+					has_government = communism
+					
+				}			
+			
+
+			level = 2
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				
+				democratic_drift = -0.05
+				fascism_drift = -0.05
+				research_time_factor = 0.05
+				unity_factor = -0.05
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+
+   					factor = 30
+	   				communism < 0.8
+	   			}
+   			}
+		}
+
+		fas_censorship2 = {
+			
+			picture = generic_pp_unity_bonus
+
+
+			available = {
+					has_government = fascism
+					
+				}			
+			
+
+			level = 2
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.05
+				communism_drift = -0.05
+				research_time_factor = 0.05
+				unity_factor = -0.05
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+   					factor = 30
+	   				fascism < 0.8
+	   			}
+   			}
+		}
+
+		
+
+		dem_censorship2 = {
+			
+			picture = generic_pp_unity_bonus
+
+
+			available = {
+					AND = {
+					has_government = democratic
+					OR = {has_war = yes
+						threat > 0.5}
+					}
+				}			
+			
+
+			level = 2
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				communism_drift = -0.05
+				research_time_factor = 0.05
+				unity_factor = -0.05
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+   					factor = 30
+	   				democratic < 0.8
+	   			}
+   			}
+		}
+
+		
+
+		dem_censorship3 = {
+
+
+						picture = generic_wall_line
+
+			available = {
+				AND = {
+					has_government = democratic
+					has_war = yes
+				}			
+			}
+			
+			level = 1
+			cost = 10
+			removal_cost = -1
+			
+			modifier = {
+
+				fascism_drift = -0.1
+				communism_drift = -0.1			
+				research_time_factor = 0.10
+				unity_factor = -0.15
+				
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+   					factor = 40
+	   				democratic < 0.6
+	   					
+   				}
+
+   				
+   			}
+		}
+
+		fas_censorship3 = {
+
+
+						picture = generic_wall_line
+
+			available = {
+				
+					has_government = fascism
+				
+				
+			}
+			
+			level = 1
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.1
+				communism_drift = -0.1				
+				research_time_factor = 0.10
+				unity_factor = -0.15
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+   					factor = 40
+
+	   						fascism < 0.6
+	   					
+   					
+   				}
+
+   				
+   			}
+		}
+
+		com_censorship3 = {
+
+
+						picture = generic_wall_line
+
+			available = {
+				
+					has_government = communism
+				
+				
+			}
+			
+			level = 1
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.1
+				fascism_drift = -0.1				
+				research_time_factor = 0.10
+				unity_factor = -0.15
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+   					factor = 40
+
+	   						communism < 0.6
+	   					
+   					
+   				}
+
+   				
+   			}
+		}
+
+
+
+	}
+
+	}
